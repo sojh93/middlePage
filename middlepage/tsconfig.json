@@ -1,17 +1,24 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
+  "files": [
+    "src/main.ts",
+    "src/shims-vue.d.ts",
+    "src/types.d.ts"
+  ],
+  "references": [],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.vue",
+    "shims-vue.d.ts",
+    "types.d.ts"
+  ],
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext", // 혹은 원하는 ECMAScript 버전
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*", "node_modules/*", "src/types/*"]
     },
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.vitest.json"
-    },
-    {
-      "path": "./nightwatch/tsconfig.json"
-    }
-  ]
+    "moduleResolution": "node"
+  }
 }

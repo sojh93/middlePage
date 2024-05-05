@@ -4,7 +4,7 @@
       <h2>쏘굿리뷰</h2>
     </div>
   </header>
-
+  <Index/>
   <RouterView />
 </template>
 
@@ -47,8 +47,6 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   .logo {
@@ -57,15 +55,12 @@ nav a:first-of-type {
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
   }
 
   nav {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }

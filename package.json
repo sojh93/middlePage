@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.4.26",
+    "vue-tsc": "^2.0.16"
+  },
+  "scripts": {
+    "dev": "npm run dev"
+  }
+}
